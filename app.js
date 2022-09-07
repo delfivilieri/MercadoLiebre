@@ -2,8 +2,12 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
-app.listen(process.env.PORT || 3032, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log('Servidor activo')
+})
+
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo");
 })
 
 app.use(express.static(path.join(__dirname , './public')))
